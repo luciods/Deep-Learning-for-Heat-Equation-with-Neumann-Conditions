@@ -4,7 +4,7 @@ In the simplest construction of the network, the solution $u(t,x)$ is given by $
 
 In this project, we try to solve the heat equation with Neumann conditions. The problem is
 $$\partial_t u(t,x)=\alpha\partial^2_x u(t,x)$$ $$u(0,x)=f(x)$$ $$\partial_x u(t,L)=\partial_x u(t,-L)=0$$ with $(t,x)\in[0,T]\times[-L,L]$. Following the above ansatz, the functions $G$ and $D$ should obey to
-$$G(0,x)=f(x),\quad \partial_x G(t,L)=\partial_x G(t,-L)=0,$$ $$D(0,x)=0,\quad \partial_x D(t,L)=\partial_x D(t,-L)=0, \quad D(t,L)=D(t,-L)=0.$$ The functions $G$ and $D$ are pre-trained. In particular, the training of $D$ consists of the minimization of $$J_D = \dfrac{1}{|\Omega||[0,T]|}\sum_{(t_i,x_i)\in [0,T]\times \Omega}\left(D(t_i,x_i;\theta)-d(t_i,x_i)\right)^2$$ where $d(t,x)=min_{x_0=\{-L,L\}}t|x-x_0|$, hence yielding to a smooth extension of this distance function.
+$$G(0,x)=f(x),\quad \partial_x G(t,L)=\partial_x G(t,-L)=0,$$ $$D(0,x)=0,\quad \partial_x D(t,L)=\partial_x D(t,-L)=0, \quad D(t,L)=D(t,-L)=0.$$ The functions $G$ and $D$ are pre-trained. In particular, the training of $D$ consists of the minimization of $$J_D = \dfrac{1}{|\Omega||[0,T]|}\sum_{(t_i,x_i)\in [0,T]\times \Omega}\left(D(t_i,x_i;\theta)-d(t_i,x_i)\right)^2$$ where $d(t,x)=min_{x_0=\{-L,L\}}t|x-x_0|$, which yields to a smooth extension of this distance function.
 
 
 ## References
