@@ -13,7 +13,7 @@ $$G(0,x)=f(x),\quad \partial_x G(t,L)=\partial_x G(t,-L)=0,$$ $$D(0,x)=0,\quad \
 
 For the training of $u(t,x)$, instead, we choose $10$ hidden layers with $128$ neurons each, $201$ and $401$ equally spaced $t$ and $x$ points and a threshold of $0.5\times 10^{-6}$. Here, there are the plots of the heatmap of the solution and the loss as a function of the epochs.
 
-<img src="https://github.com/luciods/Deep-Learning-for-Heat-Equation-with-Neumann-Conditions/blob/main/u(t,x).png" width="674" height="431">
+<img src="https://github.com/luciods/Deep-Learning-for-Heat-Equation-with-Neumann-Conditions/blob/main/u(t,x)map.png" width="640" height="480">
 <img src="https://github.com/luciods/Deep-Learning-for-Heat-Equation-with-Neumann-Conditions/blob/main/loss_u.png" width="640" height="480">
 ## References
 [https://arxiv.org/abs/1711.06464]
